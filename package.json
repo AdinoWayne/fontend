@@ -1,0 +1,20 @@
+{
+  "name": "vintage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass public/sass/main.sass public/dist/main.css & node server",
+    "dev": "node server.js & node-sass -w public/sass/ -o public/dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.12.5"
+  }
+}

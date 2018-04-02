@@ -1,0 +1,46 @@
+.card
+  display: block
+  margin: 90px 0
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
+    .left
+      flex-grow: 1
+      width: 50%
+
+      img
+        width: 100%
+
+    .right
+      flex-grow: 1
+      display: flex
+      flex-direction: column
+      line-height: 24px
+      width: 50%
+      padding: 0 35px
+
+      a
+        margin-top: 30px
+        color: $palette-btn
+        text-decoration: underline
+
+      .card-title
+        text-transform: uppercase
+        font-size: 26px
+        font-weight: 900
+      .price
+        margin-top: 25px
+        color: $palette-btn
+        font-size: 19px
+        font-weight: 900px
+
+      .atcard-btn
+        margin-top: 25px
+        width: 95px
+        padding: 10px 20px
+        color: $color-white
+        font-weight: 500
+        text-align: center
+        background-color: $palette-btn

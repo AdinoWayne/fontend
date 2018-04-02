@@ -1,0 +1,151 @@
+.fa
+    margin-right: 4px
+.ant-popover-inner-content
+  padding: 0
+.ant-modal
+  top: 50px
+  &-body
+    padding: 0
+.ant-tree
+  &-iconEle
+    background-color: none
+    ant-tree-icon_loading
+      background-color: none
+      ant-tree-icon__open
+        background-color: none
+.ant-select.editor-select-filetype
+  height: 40px
+  .ant-select-selection
+    height: 40px
+    border: 2px solid $color-grey-5
+
+  .ant-select-selection__rendered
+    height: 40px
+    line-height: 38px
+.ant-popover
+  z-index: 9999
+.ant-layout
+  overflow: auto
+  height: 100vh
+  background-color: $color-background
+
+  .ant-layout-footer
+    background-color: $flat-midnightblue-1
+    padding: 15px 50px
+    width: calc(100vw - 250px)
+    text-align: center
+    position: fixed
+    bottom: 0
+
+  .ant-layout-sider
+    margin-top: 55px
+    background-color: $palete-dark !important
+
+    .ant-menu
+      color: $color-white
+      background-color: $palete-dark
+
+    li
+      &.ant-menu-item, .ant-menu-submenu-title
+        font-size: 15px !important
+        font-weight: 500
+        &:hover
+          color: $minimalist-light
+
+      &.site-info
+        margin: 0
+        background-color: $palete-red
+        width: 250px
+        &:hover
+          color: $flat-alizarin-2
+
+      &.ant-menu-item-selected
+        color: $color-white
+        background-color: $minimalist-dark
+        &:hover
+          color: $color-white
+        &::after
+          border-right: none
+
+  .ant-layout-content
+    background-color: $color-background !important
+    margin-top: 55px !important
+    height: 100%
+    display: flex
+
+    @media screen and (max-width: 992px)
+      margin-left: 0 !important
+
+    .your-site
+      width: 100%
+      height: auto
+      // padding: 15px
+
+    @media screen and (max-width: 992px)
+      padding: 0 5px 48px !important
+
+  .ant-layout-header
+    background-color: $palete-dark
+    height: 55px
+    line-height: 55px
+    position: fixed
+    width: 100%
+    z-index: 999
+
+    .header-brand
+      position: absolute
+      left: 0
+      font-weight: 700
+      padding-left: 15px
+      width: 250px
+      font-size: 20px
+      color: $color-white
+      background-color: $palete-red
+
+      @media screen and (max-width: 992px)
+        display: none !important
+
+      img
+        vertical-align: center
+.fr
+  &-box
+    ol
+      list-style: decimal
+    ul
+      list-style: dotted
+  &-toolbar
+    box-shadow: none !important
+    border: $border-default !important
+    border-bottom: none !important
+  &-wrapper
+    box-shadow: none !important
+    border: $border-default !important
+  &-counter
+    border: $border-default !important
+  &-element
+    max-height: 170px
+.fr-pcategory
+  .fr-element, .fr-wrapper
+    height: 300px
+    max-height: 300px !important
+
+// ACE
+.ace
+  &_editor
+    border: $border-default
+    border-left: none !important
+    width: auto !important
+    height: calc(100vh - 280px) !important
+  &_error
+    display: none
+.enable_ace_err
+  .ace
+    &_error
+      display: block
+.no_invalid
+  .ace_invalid
+    display: initial
+    color: #000 !important
+    background-color: inherit !important
+
+        

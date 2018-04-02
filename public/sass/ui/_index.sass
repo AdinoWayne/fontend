@@ -1,0 +1,40 @@
+.collection
+  .section-wrapper
+    padding: 40px 0px
+
+  &-list
+    padding: 20px 0px
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+
+  &-item
+    max-width: 220px
+    padding-right: 20px
+    padding-top: 20px
+    // width: 220px
+    // flex: 1
+
+    @media screen and (max-width: $tablet)
+      max-width: 160px
+
+    &:last-child
+      padding-right: 0px
+
+    img
+      width: 100%
+      height: auto
+      // max-height: 300px
+
+    .collection-footer
+      display: flex
+      flex-direction: column
+      color: $color-text
+
+      .name
+        font-size: 17px
+        font-weight: 900
+      .price
+        margin-top: 5px
+        font-size: 12px
