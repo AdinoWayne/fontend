@@ -1,35 +1,78 @@
-.footer
-  display: block
-  margin-top: 20px
+.nm-footer
+  position: relative
+  right: 0
+  float: left
+  clear: both
+  width: 100%
+  height: 300px
   background-color: $palette-dark
-  min-height: 300px
-  color: $color-white
+  &-bar
+    color: $palatte-background-grey
+    text-align: center
+    float: left
+    clear: both
+    line-height: 30px
+    width: 100%
+    vertical-align: middle
+    &-inner
+      background-color: #282828
+      padding: 30px 0 31px
+      overflow: hidden
+      .nm-row
+        padding-left: 0
+        padding-right: 0
+        margin: 0 auto
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        &:before
+          display: table
+          content: " "
+        &:after
+          display: table
+          content: " "
+        .menu
+          width: 100%
+          padding: 0
+          text-align: left
+          & > li
+            display: block
+            border-bottom: 1px solid #3a3a3a
+            a
+              text-decoration: none
+    &-left
+      padding-left: 10px !important
+      width: 100%
+    &-right
+      text-align: inherit
+    &-social
+      padding-left: 0px
+    &-right > ul
+      float: none
+    &-social li
+      float: none
+      display: inline-block
+      padding-left: 19px
 
-  &-wrapper
-    display: flex
-    max-width: $max-width
-    margin: auto
-    padding: 20px 0
-    flex-wrap: wrap
-
-  &-column
-    display: flex
-    justify-content: flex-start
-    flex-direction: column
-    padding: 10px
-    line-height: 24px
-    flex: 1
-    min-width: 200px
-    flex-wrap: wrap
-
-    i
-      font-size: 23px
-      margin-right: 15px
-
-    &--title
-      margin-bottom: 20px
-    &--content
-      font-size: 13px
-      font-weight: 200
-
-
+@media screen and (min-width: $tablet)
+  .nm-footer
+    height: auto
+    &-bar
+      &-inner
+        .nm-row
+          max-width: $fullhd
+          margin: 0 auto
+      &-left
+        margin-left: 5%
+        display: inline-block
+        width: auto
+        #nm-footer-bar-menu
+          text-align: center
+          float: none
+          li
+            padding-left: 10px
+            float: none
+            display: inline-block
+      &-right
+        display: inline-block
+  .nm-footer-bar-inner .nm-row .menu > li
+    border: none

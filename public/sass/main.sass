@@ -3,16 +3,85 @@
 @import "ui/all.sass"
 
 body
+  // overflow-x: hidden
   margin: 0
-  background-color: $palatte-background
-  font-family: 'Muli', sans-serif
+  font-family: 'MaisonNeue', sans-serif
+  box-sizing: border-box
+  font-weight: 100
+  overflow: visibility
+input:focus
+  outline: none
+footer
+  display: block
+.nm-link
+  display: none
+  width: 100%
+  height: 100%
+  margin-top: 20px
+  #nm-shop-categories
+    display: block
+    float: left
+    width: auto
+    padding: 0
+    li
+      padding-right: 10px
+      display: inline-block
+    li a
+      text-decoration: none 
 
 li
   list-style: none
+a
+  color: #777777
+  &:hover
+    color: #F3c996
+
+@media screen and (min-width: $tablet)
+  .nm-single-product-top
+    height: 80px
+    .nm-row
+      height: 100%
+      margin: 0 40px 0 40px !important
+
+  .text
+    max-width: $fullhd
+    margin: 0 auto
+    box-sizing: border-box
+    height: 100%
+
+  .nm-link
+    display: block
+    // position: absolute
+    // z-index: 2
+    width: auto
+    // height: auto
+    // top: 1%
+    // left: 8%
+    ul li a
+      font-size: 12px
+  // .wrapper
+  //   background-color: #EEEEEE
+  input
+    background-color: #eeeeee
+
+@media screen and (max-width: $mobile)
+  .wrapper
+    width: 100%
+    overflow-x: hidden
+
+.col-xs-12
+  position: relative
+  padding-left: 0
+  padding-right: 0
+  float: left
+  // width: 100%
+
 
 .wrapper
+  box-sizing: border-box
   max-width: $max-width
   margin: auto
+  
 
-  @media screen and (max-width: $tablet)
-    padding: 0 10px
+
+

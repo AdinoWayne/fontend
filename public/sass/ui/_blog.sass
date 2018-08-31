@@ -1,0 +1,165 @@
+*
+  box-sizing: border-box
+
+/* force scrollbar
+
+a
+    text-decoration: none
+
+html
+  overflow-y: scroll
+
+.grid
+    height: 2350px !important
+    &:after
+        content: ''
+        display: block
+        clear: both
+
+.grid-sizer
+    width: 33.333%
+
+.grid-item
+    width: 30% 
+    float: left 
+    margin-bottom: 60px
+    img
+        cursor: pointer
+        margin-bottom: 15px
+        display: block
+        max-width: 100%
+
+.blog-post-meta
+    margin-bottom: 14px
+    position: relative
+    color: #a0a0a0
+    padding-left: 51px
+    &:before
+        position: absolute
+        top: 15px
+        left: 0
+        display: block
+        content: " "
+        width: 37px
+        height: 1px
+        background: #dadada
+        box-sizing: border-box
+.blog-post-title
+    font-size: 22px
+    line-height: 1.2px
+    color: #282828
+    font-style: normal
+    a
+        font-weight: 200
+        text-decoration: none
+        color: inherit
+
+.blog-post-content
+
+    overflow: auto
+    .blog-post-excerpt a
+        margin-left: 15px
+
+.blog-collection
+    margin: auto !important
+    box-sizing: border-box
+    overflow: auto
+    display: block
+
+.blog-content
+    margin-top: 30px
+
+.blog-wrapper
+    padding-left: 20px 
+    padding-right: 20px
+    max-width: 1384px
+    width: auto
+    margin: 0 auto
+
+.blog-post-thumbnail
+    .hover-image-overlay
+        &:before
+            background: #c3aa05e
+            width: 50px
+            height: 1px
+            margin-left: 1px
+
+    & a
+        position: relative
+        display: block
+
+
+.blog-collection
+    .nm-single-product-top
+        .blog-wrapper
+            padding-top: 20px
+            .nm-row
+                .nm-blog-link ul li a
+                    font-size: 18px
+                .nm-blog-link ul li
+                    display: inline-block
+.hover-overlay:before
+    position: absolute
+    top: 35%
+    left: 50%
+    z-index: 100
+    display: block
+    content: " "
+    opacity: 1
+    pointer-events: none
+    width: 50px
+    height: 1px
+    margin-left: -25px
+    background: #dc9814
+.hover-overlay:after
+    width: 1px
+    height: 50px
+    margin-top: -25px
+    position: absolute
+    top: 35%
+    left: 50%
+    z-index: 100
+    display: block
+    content: " "
+    opacity: 1
+    pointer-events: none
+    background: #dc9814
+.hover-overlay a:before
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 10
+    display: block
+    content: " "
+    opacity: 0.6
+    transition: opacity 0.2s ease
+    background: #111
+
+@media screen and(max-width: 549px)
+    .grid
+        .grid-item
+            width: 100%
+    .nm-shop-categories
+        padding-left: 0
+        & li
+            padding-bottom: 10px
+        & li span
+            display: none
+    .blog-collection
+        .nm-single-product-top
+            .blog-wrapper
+                border-top: 1px solid #eee
+                padding-top: 20px
+                .nm-row
+                    .nm-blog-link ul li a
+                        font-size: 18px
+                    .nm-blog-link ul li
+                        display: block
+@media screen and (min-width: 550px) and (max-width: 1026px)
+    .grid
+        .grid-item
+            width: 45%
+
+

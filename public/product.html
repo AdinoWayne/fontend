@@ -1,212 +1,447 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vintage</title>
+  <title>Savoy</title>
   <link rel="stylesheet" href="/dist/main.css">
-  <link rel="stylesheet" href="/dist/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/dist/font-awesome.min.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
 </head>
 <body>
-  <!-- Start Navbar -->
-  <header>
-    <div class="header">
-      <div class="ship-detail">
-        Free ship on orders over 50$
-      </div>
-      <div class="action-wrapper">
-        <div class="account-action">
-          <span>Log in</span>
-          <span>or</span>
-          <span>Create account</span>
-        </div>
-
-        <div><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</div>
-        <div class="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="search" placeholder="Search..." />
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- End navbar -->
-
-  <div class="wrapper">
     <!-- Start navbar -->
     <nav>
       <div class="nav-wrapper">
-        <div class="logo">
-          Vintage
-        </div>
+        <div class="header">
+          <div class="baby-header">
+              <div class="nm-main-menu-wrap col-xs-6">
+                  <ul>
+                      <li>
+                        <a href="#">Shop</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item-li"><a href="#">Shop</a></li>
+                          <li class="menu-item-li"><a href="#">Shop - Categories Grid</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Centered Categories</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Headers</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Products Only</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Pagination</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-li"><a href="#">About</a></li>
+                            <li class="menu-item-li"><a href="#">Blog</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – Classic + Sidebar</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – List</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – Single Post</a></li>
+                            <li class="menu-item-li"><a href="#">Contact</a></li>
+                            <li class="menu-item-li"><a href="#">Contact v2</a></li>
+                            <li class="menu-item-li"><a href="#">FAQ</a></li>
+                            <li class="menu-item-li"><a href="#">404</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Elements</a></li>
+                  </ul>
+                </div>
+                <div class="logo">
+                  <a href="/"><img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png"></a>
+                </div>
+                <div class="nm-right-menu-wrap col-xs-6">
+                  <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Cart</a></li>
+                  </ul>
+                </div>
+          </div>
 
-        <div class="nav-menu">
-          <span class="nav-item"><a href="/">Home</a></span>
-          <span class="nav-item"><a href="#">Products</a></span>
-          <span class="nav-item"><a href="#">Collections</a></span>
-          <span class="nav-item"><a href="#">About</a></span>
         </div>
+      <header id="luxbar" class="luxbar-fixed">
+          <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+          <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+              <ul class="luxbar-navigation">
+                  <li class="luxbar-header">
+                    <div class="logo-mobile">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png">
+                    </div>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                      id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                  </li>
+                  <li class="luxbar-item"><a href="#home"><span>Cart</span><span class="nm-menu-toggle">(0)</span></a></li>
+                  <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle">+</span></a>
+                    <ul class="sub-menu">
+                      <li class="luxbar-item"><a>Shop - Categories Grid</a></li>
+                      <li class="luxbar-item"><a>Shop - Centered Categories</a></li>
+                      <li class="luxbar-item"><a>Shop - Products Only</a></li>
+                      <li class="luxbar-item"><a>Shop - Pagination</a></li>
+                      <li class="luxbar-item"><a>Shop - Sidebar</a></li>
+                      <li class="luxbar-item"><a>Shop - Infinite Scroll</a></li>
+                      <li class="luxbar-item"><a>Products</a></li>
+                    </ul>
+                  </li>
+                  <li class="luxbar-item"><a href="#contact"><span>Pages</span><span class="nm-menu-toggle">+</span></a></li>
+                  <li class="luxbar-item"><a href="#about"><span>Element</span><span class="nm-menu-toggle">+</span></a></li>
+                  <li class="luxbar-item"><a href="#about"><span>Signin</span><span class="nm-menu-toggle"></span></a></li>
+              </ul>
+          </div>
+      </header>
       </div>
     </nav>
     <!-- End navbar -->
+    <!-- Start banner -->
 
-    <!-- Start breadcum -->
-<div class="breadcum">
-  <h5>Home <span>></span> Afternoon Tea</h5>
-</div>
-<!-- End breadcum -->
+    <!-- End banner -->
 
-  <!-- Start product -->
-  <section class="ui-product">
-    <div class="ui-product-wrapper">
-      <div class="product-images">
-        <div class="image-hero">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/tea_583c3327-59d9-4611-8bb5-91ae7a599448_540x.png?v=1509038648" alt="">
+    <!-- Start collections -->
+    <section class="collection">
+      <div class="section-wrapper">
+        <div class="nm-product-summary-col col-xs-12 col-md-10 col-lg-4">
+          <div id="nm-product-summary" class="product-summary">
+            <div class="text">
+            <div class="nm-single-product-top">
+              <div class="nm-row">
+                  <div class="nm-link">
+                      <ul id="nm-shop-categories" class="nm-shop-categories">
+                          <li class="current-cat">
+                            <a href="http://savoy.nordicmade.com/">Shop</a>
+                          </li>
+                          <li class="cat-item-24">
+                            <span>⁄</span>
+                            <a href="http://savoy.nordicmade.com/product-category/bags-backpacks/">Decoration</a>
+                          </li>
+                          <li class="cat-item-23">
+                            <span>⁄</span>
+                            <a href="http://savoy.nordicmade.com/product-category/decoration/">Ceramic Tealight Holder</a>
+                          </li>
+                      </ul>
+                      <div class="nm-single-product-menu">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nm-single-product-showcase">
+                <ol class="flex-control-nav flex-control-thumbs">
+                  <li>
+                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-ceramic-tealight-holder-100x100.jpg" class="flex-active" draggable="false">
+                  </li>
+                  <li>
+                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-ceramic-tealight-holder-2-100x100.jpg" draggable="false">
+                  </li>
+                </ol>
+                <div class="banner1">
+                  <a href="javscript:void(0);" class="woocommerce-product-gallery__trigger"></a>
+                    <div class="slide">
+                        <div>                  
+                          <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-ceramic-tealight-holder-595x738.jpg" alt="">
+                        </div>
+                        <div>                  
+                            <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-ceramic-tealight-holder-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="nm-row">
+                  <div class="nm-product-summary-inner-col col-xs-12">
+                    <div class="nm-product-summary-title">
+                      <h1 class="product_title entry-title" itemprop="name">Ceramic Tealight Holder</h1>
+                      <div itemprop="offers">
+                        <p class="price">
+                          <del>
+                            <span class="woocommerce-price-amount">
+                              <span class="woocommerce-price-current-symbol">$</span>
+                              28.00
+                            </span>
+                          </del>
+                          <ins>
+                            <span class="woocommerce-price-amount">
+                              <span class="woocommerce-price-current-symbol">$</span>
+                              16.00
+                            </span>
+                          </ins>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nm-product-summary-inner-col">
+                    <div class="product-short-description">
+                      <p>Designed for simplicity and made from high quality materials.
+                         Its sleek geometry and material combinations creates a modern 
+                         personalized look.</p>
+                    </div>
+                    <form class="cart clearfix">
+                      <div class="nm-quantity-wrap">
+                        <div class="quantity">
+                          <div class="nm-qty-minus nm-font-media-play"><span onclick="decreaseValue()">&#8249;</span></div>
+                          <input type="number" id="number" min="1" value="1" class="input-text" pattern="[0-9]*" readonly>
+                          <div class="nm-qty-plus nm-font-media-play"><span onclick="increaseValue()">&#8250;</span></div>
+                        </div>
+                      </div>
+                      <button type="submit" class="nm-simple-add-to-cart-button">Add to cart</button>
+                    </form>
+                    <div class="nm-product-share-wrap has-share-button">
+                      <div class="nm-product-wishlist-button-wrap">
+                        <a href="#" class="nm-wishlist-button"><i class="far fa-heart"></i></a>
+                      </div>
+                      <div class="nm-product-share">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="text">
+            <div class="woocommerce-tabs">
+                <div class="nm-product-tabs-col">
+                  <div class="nm-row">
+                    <div class="col-centered col-xs-12">
+                      <ul class="wc-tabs">
+                        <li class="description_tabs"><a href="javascript:void(0)">Description</a></li>
+                        <li class="additional_information_tab"><a href="javascript:void(0)">Additional Information</a></li>
+                        <li class="reviews_tab"><a href="#">Review</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="tab-description">
+                    <div class="nm-row">
+                      <div class="col-centered col-xs-12">
+                        <p>Authentic keffiyeh master cleanse. 
+                          Fingerstache semiotics PBR quinoa. 
+                          Pop-up Godard kale chips, 
+                          trust fund Neutra fingerstache paleo Wes 
+                          Anderson. Deep v single-origin coffee cred 
+                          Thundercats beard. Mumblecore before they sold 
+                          out roof party biodiesel. Banksy swag Portland
+                          readymade synth messenger bag cliche.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- code -->
+                  <div id="tab-additional_information" style="display: none;">
+                    <div class="nm-row">
+                      <div class="col centered col-md-10 col-xs-12">
+                        <div class="nm-additional-information-inner">
+                          <table class="shop_attributes">
+                            <tbody>
+                              <tr class="">
+                                <th>Weight</th><td><p>1.73 kg</p></td>
+                              </tr>
+                              <tr class="alt">
+                                <th>Dimensions</th><td><p>100 x 37 x 100 cm</p></td>
+                              </tr>
+                              <tr class="">
+                                <th>Materials</th><td><p>80% cotton, 20% linen</p></td>
+                              </tr>
+                              <tr class="alt">
+                                <th>Other Info</th><td><p>American heirloom jean shorts pug seitan letterpress.</p></td>
+                              </tr>
+                              <tr class=""><th>Size</th><td><p>One Size, XL, L, M, S</p></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
 
-        <div class="image-small">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/tea_583c3327-59d9-4611-8bb5-91ae7a599448_grande.png?v=1509038648" alt="">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/AFTERNOONTEA_f87f9404-888b-4ee0-945d-3e3b3473d8a7_grande.jpg?v=1509038648">
+        <div class="text">
+            <div class="nm-product-data" id="nm-product-meta">
+                <div class="nm-row">
+                  <div class="col-xs-12">
+                    <span class="sku_wrapper">SKU: <span class="sku">73253-21</span></span>
+                    <span class="posted_in">Category: <span class="sku">Decoration</span></span>
+                    <span class="tagged_as">Tags: <span class="sku">Decor, Lighting</span></span>
+                  </div>
+                </div>
+              </div>
         </div>
+
+        <div class="text">
+            <div class="collection-list">
+                <div class="collection-item">
+                  <div class="collection-img">
+                      <img class="img-product" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-laptop-bag-350x434.jpg">
+                      <img class="img-product2" style="display: none;" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-laptop-bag-2-350x434.jpg"/>    
+                  </div>
+                   <div class="collection-footer">
+                      <div class="wish-btn">
+                        <a><i class="far fa-heart"></i></a>
+                      </div>
+                      <a href="#">Laptop Bag</a>
+                      <span>$79.00</span> 
+                    </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-img">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-plain-glassbottle-350x434.jpg">
+                      <img class="img-product2" style="display: none;" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-plain-glassbottle-2-350x434.jpg"/>
+                  </div>
+                  <div class="collection-footer">
+                      <div class="wish-btn">
+                        <a><i class="far fa-heart"></i></a>
+                      </div>
+                      <a href="#">Plain Glass Bottle</a>
+                      <span>$79.00</span> 
+                    </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-img">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-ceramic-tealight-holder-350x434.jpg">
+                      <img class="img-product2" style="display: none;" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-door-stop-350x434.jpg"/>    
+                  </div>
+                  <div class="collection-footer">
+                      <div class="wish-btn">
+                        <a><i class="far fa-heart"></i></a>
+                      </div>
+                      <a href="#">Plain Glass Bottle</a>
+                      <span>$79.00</span> 
+                    </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-img">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-canvas-basket-350x434.jpg">
+                      <img class="img-product2" style="display: none;" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-canvas-basket-2-350x434.jpg"/>
+                  </div>
+                  <div class="collection-footer">
+                      <div class="wish-btn">
+                        <a><i class="far fa-heart"></i></a>
+                      </div>
+                      <a href="#">Canvas Basket</a>
+                      <span>$79.00</span> 
+                    </div>
+                </div>
+                <div class="collection-item">
+                  <div class="collection-img">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-hans-backpack-2-350x434.jpg">
+                      <img class="img-product2" style="display: none;" src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/08/product-hans-backpack-350x434.jpg"/>    
+                  </div>
+                  <div class="collection-footer">
+                      <div class="wish-btn">
+                        <a><i class="far fa-heart"></i></a>
+                      </div>
+                      <a href="#">Hans Backpack</a>
+                      <span>$79.00</span> 
+                    </div>
+                </div>
+              </div>
+        </div>
+
       </div>
-
-      <div class="product-infomation">
-        <div class="product-title">
-          Afternoon Tea
+    </section>
+    <!-- End collection -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" src="">
+      </div>
+<footer id="nm-footer" class="nm-footer">
+  <div class="nm-footer-bar">
+    <div class="nm-footer-bar-inner">
+      <div class="nm-row">
+        <div class="nm-footer-bar-left col-md-8 col-xs-12">
+          <ul id="nm-footer-bar-menu" class="menu">
+            <li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386">
+              <a href="http://savoy.nordicmade.com/about/">About Us</a>
+            </li>
+            <li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388">
+              <a href="http://savoy.nordicmade.com/blog/">Blog</a>
+            </li>
+            <li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
+              <a href="http://savoy.nordicmade.com/faq/">FAQs</a>
+            </li>
+            <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387">
+              <a href="http://savoy.nordicmade.com/order-tracking/">Order Tracking</a>
+            </li>
+            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385">
+              <a href="http://savoy.nordicmade.com/contact/">Contact</a>
+            </li>
+            <li class="nm-footer-bar-text menu-item">
+              <div>© By <a href="http://themeforest.net/user/nordicmade/?ref=nordicmade">NordicMade</a>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <div class="product-price">
-          $ 9.0
-        </div>
-
-        <div style="display: block;">
-          <span class="default-btn">Add to cart</span>
-        </div>
-
-        <div class="product-content">
-          This is a demonstration store. You can purchase products like this from Telegramme Paper Co. <br><br>
-
-          Blank inside for your own message. Comes with an embossed recycled Kraft envelope. All orders placed before 12pm will ship the same day (excludes personalised items & wholesale orders)
+        <div class="nm-footer-bar-right col-md-4">
+          <ul class="nm-footer-bar-social">
+            <li>
+              <a href="http://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://plus.google.com" target="_blank" title="Google+">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-  <section>
-    <div>
-      <h3>FREE UK SHIPPING</h3>
-      148mm x 148mm folded size<br>
-      Litho Print Quality Indigo 5500 Digital Press<br>
-      Gesso 250gsm / Square<br>
-      <br>
-      We offer the following services, which can be chosen at checkout:<br>
-      <br>
-      Royal Mail 1st Class: 1- 2 working days within the UK<br>
-      Royal Mail 2nd Class: 2 - 3 working days within the UK<br>
-      International Tracked & Signed: All of Royal Mails tracking and signature services aim to deliver to Europe within 3-6 working days and worldwide within 5-8 working days.<br>
-      FREE UK SHIPPING on all orders over £75<br>
-      FREE UK SHIPPING on all single greetings cards<br>
-      WE SHIP WORLDWIDE!
-    </div>
-  </section>
-  <!-- End product -->
-
-  <!-- Start collections -->
-  <section class="collection">
-    <div class="section-wrapper">
-      <div class="header">
-        <h1>More from this collection</h1>
-      </div>
-
-      <div class="collection-list">
-        <div class="collection-item">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/butterfly_33e32246-b2ee-4871-9622-0cd2b47515a1_370x.png?v=1509038549">
-
-          <div class="collection-footer">
-            <span class="name">Butterfly</span>
-            <span class="price">$ 4.00</span>
-          </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/robin_414835bb-b54c-426e-a173-b638c6892a47_370x.png?v=1509038581">
-
-          <div class="collection-footer">
-            <span class="name">Bird</span>
-            <span class="price">$ 4.00</span>
-          </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/moon_1028627f-a6d7-445e-95bb-b7f49c62fc30_370x.png?v=1509038539">
-
-          <div class="collection-footer">
-            <span class="name">Moon</span>
-            <span class="price">$ 4.00</span>
-          </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://cdn.shopify.com/s/files/1/0153/0847/products/whale_997b507a-f6cb-46cd-9643-7dfba9bd5f0d_370x.png?v=1509038533">
-
-          <div class="collection-footer">
-            <span class="name">Whale</span>
-            <span class="price">$ 4.00</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End collection -->
-</div>
-
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer-column">
-        <div class="footer-column--title">
-          News
-        </div>
-
-        <div class="footer-column--content">
-          Our Greetings Card Supply Box means you’ll never be caught short without a card again! Pick your own 10 cards, or let us pick for you and receive a box...
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Follow us
-        </div>
-
-        <div class="footer-column--content">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Accept via payment gate
-        </div>
-
-        <div class="footer-column--content">
-          <i class="fa fa-paypal" aria-hidden="true"></i>
-          <i class="fa fa-cc-visa" aria-hidden="true"></i>
-          <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-          <i class="fa fa-cc-stripe" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <div class="footer-column--title">
-          Newletter
-        </div>
-
-
-        <div class="footer-column--content">
-          <input class="same-default-btn" placeholder="Enter your email" />
-
-          <span class="default-btn">
-            Subscribe
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  </div>
+</footer>
 </body>
+<script>
+$(document).ready(function(){
+  $('.slide').slick({
+      // autoplay: true,
+      autoplaySpeed: 2000,
+  });
+  $('.description_tabs').click(function(event){
+    $('#tab-description').css('display','block');
+    $('#tab-additional_information').css('display','none');
+  });
+  $('.additional_information_tab').click(function(event){
+    $('#tab-description').css('display','none');
+    $('#tab-additional_information').css('display','block');
+  });
+  $('.luxbar-item').click(function(event){
+    $(this).children(':last').toggleClass(" active");
+    // $('.luxber-item:last-child').toggleClass("a");
+  });
+  $('.woocommerce-product-gallery__trigger').click(function(){
+      $('#myModal').css("display","block");
+      const src = $('.slick-active img').attr("src");
+      $('#img01').attr("src",src);
+  })
+  $('.close').click(function(){
+    $('#myModal').css("display","none")
+  })
+});
+function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+</script>
 </html>

@@ -1,0 +1,147 @@
+.login
+    width: 100%
+    overflow: hidden
+    height: calc(100vh - 66px - 124px)
+    min-height: 800px
+    background-color: #f5f5f5
+    .container
+        max-width: 502px
+        margin: 0 auto
+        height: 100%
+        #customer_login
+            padding: 60px 0 60px
+            width: 100%
+            height: 100%
+            .nm-myaccount-login-inner
+                position: relative
+                width: 100%
+                height: auto
+                #nm-login-wrap
+                    top: 0
+                    position: relative
+                    left: 0
+                    display: block
+                    & h2
+                        font-weight: 300
+                        font-size: 24px
+                        line-height: 1
+                        padding: 0 0 50px
+                        text-align: center
+                #nm-register-wrap
+                    top: 0
+                    position: relative
+                    left: 0
+                    & h2
+                        font-weight: 300
+                        font-size: 24px
+                        line-height: 1
+                        padding: 0 0 50px
+                        text-align: center
+.form-row-wide
+    margin-bottom: 18px
+    label
+        display: inline-block
+        line-height: 1.4
+        color: #282828
+        padding-top: 5px
+        padding-bottom: 8px
+    .input-text
+        width: 100%
+        display: block
+        border: 1px solid #e7e7e7
+        background-color: transparent
+        line-height: 1.7em
+        padding: 8px 10px
+.form-group
+    label
+        height: auto
+        position: relative
+        cursor: pointer
+        display: inline-block
+        line-height: 1.4
+        color: #282828
+        padding-top: 5px
+        padding-bottom: 8px
+        .woocommerce-form__input
+            position: absolute
+            height: auto
+            vertical-align: top
+            top: 7px
+        span
+            padding-left: 20px
+            display: inline-block
+            vertical-align: top
+            &:before
+                position: absolute
+                top: 7px
+                left: 0
+                display: block
+                content: " "
+                width: 14px
+                height: 14px
+                cursor: pointer
+    .lost_password
+        float: right
+        & a
+            position: relative
+            top: 7px
+            color: #282828
+            cursor: pointer
+.form-actions
+    text-align: center
+    margin-bottom: 18px
+    button
+        cursor: pointer
+        font-size: 18px
+        display: block
+        width: 100%
+        padding: 12px
+        background-color: #282828
+        color: #ffffff
+.nm-login-form-divider
+    position: relative
+    width: 100%
+    margin: 19px 0
+    text-align: center
+    &:before
+        position: absolute
+        top: 50%
+        left: 0
+        display: block
+        content: " "
+        width: 100%
+        height: 1px
+        background-color: #ccc
+    span
+        position: relative
+        z-index: 10
+        display: inline-block
+        line-height: 1
+        color: #282828
+        padding: 0 19px
+        text-transform: lowercase
+        background: #f5f5f5
+#nm-show-register-button,#nm-show-login-button
+    cursor: pointer
+    display: block
+    width: 100%
+    padding: 11px
+    border: 1px solid #aaa
+    text-align: center
+
+
+@media screen and (max-width: $mobile)
+    .login-form, .register
+        padding: 0 10px 0 10px
+    .customer_login
+        overflow: hidden
+    .woocommerce-LostPassword.lost_password
+        margin-bottom: 10px
+
+                            
+
+
+                        
+
+
+

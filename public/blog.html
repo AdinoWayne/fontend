@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Savoy</title>
+  <link rel="stylesheet" href="/dist/main.css">
+  <!-- <link rel="stylesheet" href="/dist/font-awesome.min.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+    <!-- Start navbar -->
+    <nav>
+      <div class="nav-wrapper">
+        <div class="header">
+          <div class="baby-header">
+              <div class="nm-main-menu-wrap col-xs-6">
+                  <ul>
+                      <li>
+                        <a href="#">Shop</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item-li"><a href="#">Shop</a></li>
+                          <li class="menu-item-li"><a href="#">Shop - Categories Grid</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Centered Categories</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Headers</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Products Only</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Pagination</a></li>
+                          <li class="menu-item-li"><a href="#">Shop – Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-li"><a href="#">About</a></li>
+                            <li class="menu-item-li"><a href="#">Blog</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – Classic + Sidebar</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – List</a></li>
+                            <li class="menu-item-li"><a href="#">Blog – Single Post</a></li>
+                            <li class="menu-item-li"><a href="#">Contact</a></li>
+                            <li class="menu-item-li"><a href="#">Contact v2</a></li>
+                            <li class="menu-item-li"><a href="#">FAQ</a></li>
+                            <li class="menu-item-li"><a href="#">404</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Elements</a></li>
+                  </ul>
+                </div>
+                <div class="logo">
+                  <a href="/"><img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png"></a>
+                </div>
+                <div class="nm-right-menu-wrap col-xs-6">
+                  <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Cart</a></li>
+                  </ul>
+                </div>
+          </div>
+
+        </div>
+      <header id="luxbar" class="luxbar-fixed">
+          <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+          <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+              <ul class="luxbar-navigation">
+                  <li class="luxbar-header">
+                    <div class="logo-mobile">
+                      <img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png">
+                    </div>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                      id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                  </li>
+                  <li class="luxbar-item"><a href="#home"><span>Cart</span><span class="nm-menu-toggle">(0)</span></a></li>
+                  <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle">+</span></a>
+                    <ul class="sub-menu">
+                      <li class="luxbar-item"><a>Shop - Categories Grid</a></li>
+                      <li class="luxbar-item"><a>Shop - Centered Categories</a></li>
+                      <li class="luxbar-item"><a>Shop - Products Only</a></li>
+                      <li class="luxbar-item"><a>Shop - Pagination</a></li>
+                      <li class="luxbar-item"><a>Shop - Sidebar</a></li>
+                      <li class="luxbar-item"><a>Shop - Infinite Scroll</a></li>
+                      <li class="luxbar-item"><a>Products</a></li>
+                    </ul>
+                  </li>
+                  <li class="luxbar-item"><a href="#contact"><span>Pages</span><span class="nm-menu-toggle">+</span></a></li>
+                  <li class="luxbar-item"><a href="#about"><span>Element</span><span class="nm-menu-toggle">+</span></a></li>
+                  <li class="luxbar-item"><a href="#about"><span>Signin</span><span class="nm-menu-toggle"></span></a></li>
+              </ul>
+          </div>
+      </header>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Start banner -->
+    <!-- End banner -->
+    <!-- Start collections -->
+    <section class="blog-collection">
+        <div class="nm-single-product-top">
+            <div class="blog-wrapper">
+                <div class="nm-row">
+                        <div class="nm-blog-link">
+                            <ul class="nm-shop-categories">
+                                <li class="current-cat">
+                                    <a href="http://savoy.nordicmade.com/">All</a>
+                                </li>
+                                <li class="cat-item-24">
+                                    <span>⁄ &nbsp;</span>
+                                    <a href="http://savoy.nordicmade.com/product-category/bags-backpacks/">Design</a>
+                                </li>
+                                <li class="cat-item-23">
+                                    <span>⁄ &nbsp;</span>
+                                    <a href="http://savoy.nordicmade.com/product-category/decoration/">Inspiration</a>
+                                </li>
+                                <li class="cat-item-23">
+                                    <span>⁄ &nbsp;</span>
+                                    <a href="http://savoy.nordicmade.com/product-category/decoration/">Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <div class="blog-wrapper">
+                <div class="grid">
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-inspiration.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                <span> August 12, 2015</span>
+                            </div>
+                            <h2 class="blog-post-title"><a href="#">Inspiration: Rural Living</a></h2>
+                            <div class="blog-post-content">
+                                <div class="blog-post-excerpt">
+                                    <P>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                    </P>
+                                    <a href="#">More  &nbsp;→</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-notebooks.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                <span> August 12, 2015</span>
+                            </div>
+                            <h2 class="blog-post-title"><a href="#">Take Note</a></h2>
+                            <div class="blog-post-content">
+                                <div class="blog-post-excerpt">
+                                    <P>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                    </P>
+                                    <a href="#">More  &nbsp;→</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-chair.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">July: Trending Items</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-cutlery.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">Cutlery</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-clock.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">Minimalist Wall Clocks</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-interview.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">Designer Interview</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-house.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">Inspiration: Nordic Home</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-lantern.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">May: Trending Items</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="blog-post-thumbnail">
+                                <a href="#">
+                                    <img src="http://cdn.savoy.nordicmade.com/wp-content/uploads/2015/07/blog-image-sleeves.jpg"/>
+                                </a>
+                            </div>
+                            <div class="blog-post-meta">
+                                    <span> August 12, 2015</span>
+                                </div>
+                                <h2 class="blog-post-title"><a href="#">Leather Sleeves</a></h2>
+                                <div class="blog-post-content">
+                                    <div class="blog-post-excerpt">
+                                        <P>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Nulla id tellus justo. Morbi posuere laoreet justo, id sagittis sem gravida quis.
+                                        </P>
+                                        <a href="#">More  &nbsp;→</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End collection -->
+<footer id="nm-footer" class="nm-footer">
+  <div class="nm-footer-bar">
+    <div class="nm-footer-bar-inner">
+      <div class="nm-row">
+        <div class="nm-footer-bar-left col-md-8 col-xs-12">
+          <ul id="nm-footer-bar-menu" class="menu">
+            <li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386">
+              <a href="http://savoy.nordicmade.com/about/">About Us</a>
+            </li>
+            <li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388">
+              <a href="http://savoy.nordicmade.com/blog/">Blog</a>
+            </li>
+            <li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
+              <a href="http://savoy.nordicmade.com/faq/">FAQs</a>
+            </li>
+            <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387">
+              <a href="http://savoy.nordicmade.com/order-tracking/">Order Tracking</a>
+            </li>
+            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385">
+              <a href="http://savoy.nordicmade.com/contact/">Contact</a>
+            </li>
+            <li class="nm-footer-bar-text menu-item">
+              <div>© By <a href="http://themeforest.net/user/nordicmade/?ref=nordicmade">NordicMade</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nm-footer-bar-right col-md-4">
+          <ul class="nm-footer-bar-social">
+            <li>
+              <a href="http://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://plus.google.com" target="_blank" title="Google+">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script>
+$(document).ready(function(){
+  $('.luxbar-item').click(function(event){
+    $(this).children(':last').toggleClass(" active");
+    // $('.luxber-item:last-child').toggleClass("a");
+  });
+  $('.blog-post-thumbnail').hover(function(){
+      $(this).addClass("hover-overlay");
+  },function(){
+    $(this).removeClass("hover-overlay");
+  });
+});
+const mas = $('.grid').masonry({
+    itemSelector : '.grid-item',
+    gutter: 50
+});
+mas.imagesLoaded().progress(function() {
+    mas.masonry('layout');
+})
+</script>
+</html>

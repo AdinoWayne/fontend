@@ -1,14 +1,503 @@
 .banner
+  overflow: auto
+  position: relative
   display: block
-  max-width: $max-width
+  max-width: 100%
   margin: auto
-  margin-top: 20px
+  .header-text
+    margin-left: 10px
+    h1
+      font-size: 16px
+    a
+      text-decoration: none
+      text-align: left
 
   img
     width: 100%
-    max-height: 346px
+    max-height: auto
+.banner1
+  @extend .banner
+
+#tab-additional_information
+  display: none 
 
 .collection
   display: block
-  max-width: $max-width
   margin: auto
+
+.nm-shop-sidebar-inner
+  display: none
+  // opacity: 0
+
+.slick-dots
+  position: relative !important
+  padding-top: 10px !important
+  padding-bottom: 10px !important
+  border-bottom: 1px solid #eaeaea
+  border-top: 1px solid #eaeaea
+
+.nm-mobile-menu
+  display: none
+  background: #ffffff
+  width: 100%
+  overflow: hidden
+  &-scroll
+    overflow-x: hidden
+    overflow-y: scroll
+  &-content
+    border-top: 1px solid #eee
+    padding: 0 0 17px
+    .nm-row
+      padding-left: 0
+      padding-right: 0
+      margin: 0 auto
+      height: 418px
+      max-width: 100%
+      &:before
+        display: table
+        content: " "
+      &:after
+        display: table
+        content: " "
+      .nm-mobile-menu-top
+        &:first-child
+          margin-top: 17px
+        #nm-moblie-menu-top-ul li
+          
+        .nm-mobile-menu-item-cart.menu-item
+            display: block
+.input-search
+  margin-top: 20px
+  margin-bottom: 20px
+  position: relative
+  & a
+    position: absolute
+    top: 25%
+    right: 0
+    z-index: 10
+    width: 23px
+    height: 23px
+    display: inline-block
+    float: right
+    & i 
+      width: 100%
+      height: 100%
+  input
+    height: 100%
+    opacity: 0.4
+    padding-left: 0
+    width: 100%
+    display: inline-block
+    font-size: 22px
+    line-height: normal
+    background-color: white
+.nm-product-summary-col
+  margin-bottom: 20px
+  float: none !important
+  padding-left: 0 !important
+  .product-summary
+    width: 100%
+    .nm-row
+      overflow: auto
+      padding-left: 0
+      padding-right: 0
+      margin: 0 auto
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      &:before
+        display: table
+        content: " "
+      &:after
+        display: table
+        content: " "
+      .nm-product-summary-inner-col
+        width: 100%
+        padding-left: 0 !important
+        position: relative
+        .nm-product-summary-title
+          .product_title
+            font-size: 22px
+            line-height: 1.2
+            font-weight: normal
+          div
+            .price
+              line-height: 1
+              vertical-align: top
+              margin-bottom: 0
+              padding: 3px 0 24px
+              del
+                text-decoration: none
+                vertical-align: top
+                .woocommerce-price-amount
+                  font-size: 13px
+                  color: #888
+                  text-decoration: line-through
+                  vertical-align: top
+                  .woocommerce-price-current-symbol
+                    vertical-align: top
+              ins
+                text-decoration: none
+                color: #dc9814
+                background: none
+                vertical-align: top
+                .woocommerce-price-amount
+                  font-size: 20px
+                  line-height: 1
+.nm-product-summary-inner-col
+  .product-short-description
+    font-size: 16px
+    line-height: 1.8
+    padding-bottom: 18px
+    p:last-child
+      margin-bottom: 0
+  .cart
+    padding-top: 1px
+    display: block
+    .nm-quantity-wrap
+      position: relative
+      width: 100%
+      text-align: center
+      border-top: 1px solid #dadada
+      border-left: 1px solid #dadada
+      border-right: 1px solid #dadada
+      overflow: hidden
+      .quantity
+        .nm-qty-minus
+          cursor: pointer
+          color: #282828
+          position: relative
+          display: inline-block
+          font-size: 42px
+          line-height: 42px
+          font-weight: normal
+          width: 3px
+          height: 42px
+          text-align: center
+          user-select: none
+        .nm-qty-plus
+          @extend .nm-qty-minus
+        input
+          vertical-align: 6px
+          padding-left: 5px
+          width: 40px
+          font: inherit
+          margin: 0
+          color: inherit
+          text-align: center
+          &::-webkit-inner-spin-button
+            -webkit-appearance: none
+    .nm-simple-add-to-cart-button
+      cursor: pointer
+      font-family: inherit
+      width: 100%
+      padding: 14px
+      color: #ffffff
+      background-color: #282828
+      border: 1px solid #282828
+      font-size: 16px
+      line-height: 16px
+      opacity: 1
+      &:hover
+        background-color: #4c4c4c
+  .nm-product-share-wrap 
+    width: 100%
+    display: inline-flex
+    padding-top: 20px
+    overflow: hidden
+    .nm-product-wishlist-button-wrap
+      margin-right: 15px
+      float: left
+      & a
+        padding-right: 10px
+        border-right: 1px solid #dadada
+        display: inline-block
+
+.woocommerce-tabs
+  border-top: 1px solid #eee
+  border-bottom: 1px solid #eee
+  width: 100%
+  height: 382px
+  .nm-product-tabs-col
+    height: auto
+    .nm-row
+      padding-left: 0
+      padding-right: 0
+      &:before
+        display: table
+        content: " "
+      &:after
+        display: table
+        content: " "
+      .col-centered
+        padding-right: 0 !important
+        float: none !important
+        margin-right: auto
+        margin-left: auto
+        .wc-tabs
+          padding-left: 0
+          text-align: left
+          & li
+            padding: 5px 0 5px 0
+          & li a
+            font-size: 16px
+            text-decoration: none
+    #tab-description
+      margin: 0 5px 0 15px
+      font-size: 14px
+      line-height: 1.8
+      padding: 10px 0 30px 0
+    #tab-additional_information
+      display: block
+      .nm-row
+        margin: 0 auto
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        div
+          float: none
+          .nm-additional-information-inner
+            .shop_attributes
+              & tbody tr th, td
+                font-size: 14px
+                padding-left: 6px
+
+.nm-product-data
+  text-align: left
+  color: #282828
+  padding: 20px 0 20px
+  .nm-row
+    padding-left: 0
+    padding-right: 0
+    margin: 0 auto
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    &:before
+      display: table
+      content: " "
+    &:after
+      display: table
+      content: " "
+    div
+      float: none
+      border-bottom: 1px solid #eee
+      padding-bottom: 20px
+      span
+        padding-bottom: 10px
+        .sku
+          color: #777777
+      .sku_wrapper
+        display: block
+        margin: 0
+      .posted_in
+        @extend .sku_wrapper
+      .tagged_as
+        @extend .sku_wrapper
+.banner
+  .slide
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0 
+
+.collection-list
+  padding: 0 5px 0 5px
+  display: grid
+  grid-gap: 15px
+  grid-template-rows: auto
+  grid-template-columns: repeat(2, 1fr)
+
+.nm-shop-sidebar-inner
+  transition: opacity 0.5s ease
+  overflow: auto
+  margin-bottom: 30px
+  .nm-row
+    .col-xs-12
+      #nm-shop-widgets-ul
+        margin: 0 30px 0 30px
+        padding: 0 5px 0 5px
+        display: grid
+        grid-gap: 15px
+        grid-template-rows: auto
+        grid-template-columns: repeat(1, 1fr)
+        #woocommerce_product_tag_cloud-2 a
+          text-decoration: none
+          padding: 5px 10px
+          display: inline-block
+          font-size: 12px !important
+          line-height: 1
+          margin: 0 6px 6px 0px
+          border-radius: 30px
+          background: #282828
+          color: #ffffff
+          &:hover
+            background: #E89634
+          &:after
+            -webkit-font-smoothing: antialiased
+        .widget
+          .nm-shop-widget-col
+            & ul
+              padding-left: 0
+              .active
+                color: #E89634
+            & li
+              padding-bottom: 5px
+            & a
+              text-decoration: none
+            & ul li i
+              margin-right: 10px
+              border: 1px solid #282828
+              display: inline-block
+              width: 10px
+              height: 10px
+              background: #ccc
+              border-radius: 50%
+
+
+@media screen and (max-width: $tablet) and (min-width: $mobile)
+  .collection-list
+    grid-template-columns: repeat(3, 1fr)
+
+
+@media screen and (min-width: $tablet)
+  .slick-track
+    .slick-slide
+      div
+        div
+          position: relative
+          .header-text
+            position: absolute
+            z-index: 2
+            width: auto
+            height: auto
+            max-width: 300px
+            top: 50%
+            left: 10%
+            & h1 
+              font-size: 22px
+
+  .section-wrapper
+    margin: 0
+
+  .slick-dots
+    border-top: none
+    border-bottom: none
+  .col-xs-12
+    .nm-shop-filter-menu
+      float: right !important
+      width: auto !important
+      text-align: right
+      white-space: nowrap
+      overflow: hidden
+    #nm-shop-categories
+      display: block
+      float: left
+      width: auto
+      padding: 0
+      li
+        padding-right: 10px
+        display: inline-block
+      li a
+        text-decoration: none
+
+  .nm-shop-header
+    margin: 0 30px 50px 30px
+
+  .collection
+    // max-width: $fullhd
+    margin: auto !important
+    box-sizing: border-box
+    overflow: auto
+    &-item
+      max-width: 350px !important
+      margin-bottom: 20px
+      width: 100%
+    &-list
+      margin: 0 30px 50px 30px
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-gap: 23px
+      grid-template-rows: auto
+    &-img
+      max-height: 385px
+    &-footer
+      margin-top: 8px
+      & span
+        padding-top: 8px
+  .nm-product-summary-inner-col
+    float: none !important
+  #nm-product-summary
+    height: 800px
+    background-color: #eeeeee
+  .col-centered
+    & ul
+      max-width: 100%
+      margin-right: auto
+      margin-left: auto
+      text-align: center !important
+      display: table
+    & ul li
+      display: inline-block
+      padding: 5px 15px 5px 15px !important
+  
+  .woocommerce-tabs
+    height: auto
+  .nm-product-data
+    text-align: center
+  .col-xs-12
+    .sku_wrapper, .posted_in, .tagged_as
+      padding: 0 10px 0 10px
+      display: inline-block !important
+
+  .cart
+    overflow: hidden
+    float: left
+    display: block
+    width: 100%
+    max-width: 400px
+  .banner1
+    margin-left: 40px !important
+    position: relative
+    width: 60%
+    max-width: 550px
+    float: left
+    padding-left: 40px
+    // z-index: 1000
+    img
+      max-height: auto !important
+  .nm-additional-information-inner
+    display: flex
+    justify-content: center
+    table
+      align-self: center
+  .nm-single-product-showcase
+    .nm-row
+      max-width: 400px
+
+  .categori
+    display: none !important
+
+  .nm-shop-search-btn span
+    margin-right: 13px
+    display: inline-block !important
+
+  .nm-shop-sidebar-inner
+    .nm-row
+      .col-xs-12
+        #nm-shop-widgets-ul
+          grid-template-columns: repeat(4, 1fr)
+  .nm-product-tabs-col
+    margin: 0 30px
+
+  .collection-item:hover img:first-child
+    display: none
+  .collection-item:hover .img-product2
+    display: block !important
+
+@media screen and (min-width: 1280px)
+  .banner
+    max-width: $fullhd
+    margin: 0 auto
+
+  .banner1
+    max-width: 550px !important
+  
+

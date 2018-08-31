@@ -1,23 +1,22 @@
 .collection
+  margin: 10px
   .section-wrapper
-    padding: 40px 0px
 
   &-list
-    padding: 20px 0px
-    display: flex
-    flex-wrap: wrap
-    flex-direction: row
-    justify-content: space-between
+    // padding: 0
+    // flex-wrap: wrap
+    // flex-direction: row
+    // justify-content: space-between
 
   &-item
-    max-width: 220px
-    padding-right: 20px
-    padding-top: 20px
+    // max-width: 220px
+    // padding-top: 20px
+    padding-right: 0
+    // max-width: 140px
     // width: 220px
     // flex: 1
-
     @media screen and (max-width: $tablet)
-      max-width: 160px
+      max-width: 100%
 
     &:last-child
       padding-right: 0px
@@ -28,13 +27,77 @@
       // max-height: 300px
 
     .collection-footer
-      display: flex
+      display: block
       flex-direction: column
       color: $color-text
-
+      a
+        text-decoration: none
+      .wish-btn
+        float: right
+      span
+        display: block
       .name
         font-size: 17px
         font-weight: 900
       .price
         margin-top: 5px
         font-size: 12px
+  .nm-shop-header
+    padding: 10px 0 2px 10px
+    .nm-shop-menu
+      overflow: hidden
+      .nm-row
+        margin: 0 auto
+        &:before, &:after
+          display: table
+          content: " "
+          box-sizing: border-box
+        .col-xs-12
+          width: 100%
+          float: left
+          position: relative
+          .nm-shop-filter-menu
+            overflow: hidden
+            white-space: nowrap
+            float: none
+            text-align: left
+            padding-left: 0px
+            width: 100%
+            li
+              display: inline
+              vertical-align: middle
+              a
+                text-decoration: none
+                margin: 0 25px 0 0
+            .nm-shop-search-btn
+              float: right
+              margin-right: 10px  
+              & span
+                display: none
+          .nm-shop-categories
+            display: none
+
+.clearfix:after
+  clear: both
+  content: "."
+  display: block
+  visibility: hidden
+  
+.nm-infload-controls
+  position: relative
+  width: 100%
+  min-height: 42px
+  margin: 17px 0 86px
+  overflow: hidden
+  text-align: center
+  display: block
+  & a
+    display: block
+    font-size: 16px
+    text-decoration: none
+    color: #282828
+    border-top: 1px solid #eaeaea
+    border-bottom: 1px solid #eaeaea
+    padding-top: 10px
+    padding-bottom: 12px
+

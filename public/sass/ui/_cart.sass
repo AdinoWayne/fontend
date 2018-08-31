@@ -1,0 +1,401 @@
+.cart-content
+    height: calc(100vh - 66px - 124px)
+    .text
+        &:before, &:after
+            display: table
+            content: "."
+            clear: both
+            visibility: hidden
+        .col-xs-12
+            width: 100%
+            .post-8
+                .woocommerce
+                    width: 100%
+                    overflow: auto
+.woocommerce > form
+    float: left
+    width: 60%
+    margin-top: 58px
+    margin-bottom: 64px
+    padding-right: 73px
+    margin-left: 40px
+    &>h3
+        z-index: 100
+        position: relative
+        font-size: 24px
+        padding-bottom: 6px
+        color: #282828
+        font-weight: normal
+        font-style: normal
+        line-height: 1.4
+.shop_table
+    width: 100%
+    & tr
+        position: relative
+        &:first-child td
+            padding-top: 0
+            border-top: 0 none
+        & td:last-child
+            padding-top: 0
+        
+    .product-thumbnail
+        width: 75px
+        padding-left: 0
+        & img
+            display: block
+            height: auto
+            width: 100%
+    & tr td
+        line-height: 1.4
+        padding: 19px 0
+        vertical-align: middle
+        border-top: 1px solid #eee
+    .nm-product-details
+        padding-left: 19px
+        & a
+            font-size: 18px
+            display: block
+            color: #282828
+            padding-right: 17px
+        & > *
+            margin-bottom: 3px
+    .product-quantity
+        font-size: 16px
+        float: left
+        color: #282828
+        .nm-quantity-wrap
+            width: auto
+            border: 0 none
+            overflow: visible
+            position: relative
+            text-align: center
+            & label
+                display: none
+            .nm-qty-label-abbrev
+                display: inline-block
+            .quantity
+                display: inline-block
+                margin-left: 2px
+                & *
+                    display: inline-block
+                .qty
+                    overflow: auto
+                    background-color: white
+                    vertical-align: 1px
+                    padding-left: 5px
+                    width: 25px
+                    font: inherit
+                    margin: 0
+                    color: inherit
+                    text-align: center
+    .product-subtotal
+        float: right
+        color: #282828
+    .product-remove
+        width: 16px
+        vertical-align: top
+        position: relative
+        & a
+            display: block
+            font-size: 16px
+            color: #282828
+            width: 16px
+            height: 16px
+            transition: opacity 0.2s ease
+.actions
+    padding-bottom: 0 !important
+    padding-top: 28px !important
+    border-top: 1px solid #eee
+    .coupon
+        visibility: hidden
+        position: absolute
+        top: -1px
+        left: -1px
+        z-index: -1
+        width: 1px
+        height: 1px
+        overflow: hidden
+    .button
+        width: 48%
+    .button.border
+        font-size: 15px
+        padding-top: 10px
+        padding-bottom: 10px
+        border: 1px solid #aaa
+        color: #282828
+        opacity: 1
+        background: none
+    button[name="update_cart"]
+        float: right
+
+.cart-collaterals
+    position: relative
+    float: left
+    line-height: 1.6
+    color: #282828
+    width: 33%
+    margin-top: 58px
+    margin-bottom: 64px
+    &> h2
+        color: #282828
+        position: relative
+        font-size: 24px
+        padding-bottom: 16px
+        z-index: 100
+        font-weight: normal
+        line-height: 1.4
+    #nm-coupon-code
+        width: 100%
+        margin-top: 15px
+        line-height: 1.6
+        outline: 0
+        padding: 20px 10px
+        border: 1px solid #e7e7e7
+        background-color: white !important
+    .nm-coupon .button
+        background-color: white
+        font-size: inherit
+        width: 100%
+        margin: 10px 0 7px
+        padding-top: 8px
+        padding-bottom: 9px
+        border: 1px solid #aaa
+        padding: 9px 15px 24px
+        text-align: center
+        &:hover
+            color: #282828
+            opacity: 1
+    .cart_totals
+        position: static !important
+    .shipping-calcuator-form >p:first-child
+        padding-top: 15px
+    & p
+        margin-bottom: 0
+    .shipping-calculator-form .button
+        -webkit-appearance: none
+        font-size: inherit
+        width: 100%
+        padding: 11px
+        margin-bottom: 7px
+        border: 1px solid #aaa
+        color: #282828
+        opacity: 1
+        background: none
+    .shop_table
+        width: 100%
+        & tr:first-child
+            th,td
+                border-top: 1px solid #e5e5e5
+        & tr th
+            text-align: left
+            font-weight: 300
+            padding-right: 19px
+            border-left: 1px solid #e5e5e5
+            padding: 15px 21px
+            border-bottom: 1px solid #e5e5e5
+            background-color: #fafafa
+        & tr td 
+            text-align: right
+            border-right: 1px solid #e5e5e5
+            padding: 15px 21px
+            border-bottom: 1px solid #e5e5e5
+            background-color: #fafafa
+        & tr.shipping .nm-shipping-th-title
+            font-weight: inherit
+            padding-bottom: 13px
+        & tr.shipping td
+            text-align: left
+            border-left: 1px solid #e5e5e5
+#shipping_method
+    padding-left: 0
+    & li 
+        line-height: 1.6
+        padding-bottom: 2px
+    label
+        vertical-align: top
+        cursor: pointer
+        position: relative
+        padding-left: 2px
+    input
+        vertical-align: 10px
+        height: auto
+    .amount
+        float: right
+.wc-proceed-to-checkout
+    padding: 21px 0 21px 0
+    overflow: hidden
+    .button
+        display: block
+        text-align: center
+        width: 100%
+        padding: 14px 12px
+        cursor: pointer
+        color: #ffffff
+        background-color: #282828
+        font-size: 16px
+.select2-hidden-accessible
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc)
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em
+    background-size: 5px 5px, 5px 5px, 1px 1.5em
+    background-repeat: no-repeat
+// .nm-custom-radio-label:before
+//     top: 4px
+//     left: 0
+//     width: 10px
+//     height: 10px
+//     border-color: #555
+//     border-radius: 50%
+//     position: absolute
+//     display: block
+//     content: " "
+//     border: 1px solid #ccc
+//     cursor: pointer
+.form-row-wide
+    clear: both
+    & input
+        padding: 20px 10px !important
+.form-row select
+    display: block
+    width: 100%
+.select2-hidden-accessible
+    -webkit-appearance: none
+    border-radius: 0
+    padding: 13px
+    font-size: 16px
+    // border: 0 !important
+    // clip: rect(0 0 0 0) !important
+    // height: 1px !important
+    // margin: -1px !important
+    // overflow: hidden !important
+    // padding: 0 !important
+    // position: absolute !important
+    // width: 1px !important
+.select2-container
+    box-sizing: border-box
+    display: inline-block
+    margin: 0
+    position: relative
+    vertical-align: middle
+.select2-container--default .select2-selection--single
+    line-height: 1.6
+    height: 41px
+    padding: 8px 10px
+    border-color: #eaeaea
+    background-color: #fff
+    border: 1px solid #aaa
+    display: block
+    cursor: pointer
+    & .select2-selection__arrow
+        top: 7px
+        right: 5px
+        position: absolute
+        height: 26px
+        width: 20px
+        & b
+            border-color: #888 transparent transparent transparent
+            border-style: solid
+            border-width: 5px 4px 0 4px
+            height: 0
+            left: 50%
+            margin-left: -4px
+            margin-top: -2px
+            position: absolute
+            top: 50%
+            width: 0
+
+.nm-shipping-calc-wrap
+    margin-bottom: 10px
+    border: 1px solid #e5e5e5
+    .woocommerce-shipping-calculator
+        padding: 15px 21px 15px
+        background-color: #fafafa
+        .shipping-calculator-button
+            color: #282828
+            position: relative
+            display: block
+            width: auto
+
+.nm-coupon
+    overflow: hidden
+    height: 0
+    opacity: 1
+    transition: height 1s ease-in
+.nm-coupon.atc
+    height: 109px !important
+.shipping-calculator-form
+    height: 0
+    overflow: hidden
+    transition: height 1s ease-in
+.shipping-calculator-form.atc
+    height: 240px !important
+.nm-coupon-wrap
+    width: 100%
+    margin-bottom: 10px
+    border: 1px solid #e5e5e5
+.nm-coupon-inner
+    padding: 15px 21px 14px
+    background-color: #fafafa
+#nm-coupon-btn
+    position: relative
+    display: block
+    color: inherit
+
+@media screen and (max-width: 715px)
+    .woocommerce > form
+        width: 100%
+        margin-top: 20px
+        margin-left: 0
+        margin-bottom: 0
+        padding-right: 0
+    #post-8
+        padding: 0 10px 0 10px
+    #nm-cart-continue-button
+        display: none
+    #submit-update-cart
+        width: 100%
+    .cart-collaterals
+        width: 100%
+//shape and pseudo element
+.arrow-left 
+    width: 0 
+    height: 0
+    border-top: 7px solid transparent
+    border-bottom: 7px solid transparent
+    border-right: 7px solid #282828
+.arrow-right
+  width: 0
+  height: 0 
+  border-top: 7px solid transparent
+  border-bottom: 7px solid transparent
+  border-left: 7px solid #282828
+.arrow-down
+    top: 10px
+    right: 0
+    position: absolute
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-top: 7px solid #282828
+.arrow-down-two
+    @extend .arrow-down
+.product-remove:after
+    top: 0
+    content: ''
+    height: 16px
+    border-left: 2px solid black
+    position: absolute
+    transform: rotate(45deg)
+
+.product-remove:before 
+    top: 0
+    content: ''
+    height: 16px
+    border-left: 2px solid black
+    position: absolute
+    transform: rotate(-45deg)
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0 

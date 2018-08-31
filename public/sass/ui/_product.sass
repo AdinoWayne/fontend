@@ -46,3 +46,103 @@
     .product-content
       margin-top: 30px
       line-height: 24px
+.nm-single-product-menu
+  float: right
+  margin-top: 16px
+  & div
+    display: inline-block
+  & div:first-child
+    cursor: pointer
+    border-right: 7px solid #a1a1a1
+    &:hover
+      border-right: 7px solid #dc9814
+  & div:last-child
+    cursor: pointer
+    border-left: 7px solid #a1a1a1
+    &:hover
+      border-left: 7px solid #dc9814
+.woocommerce-product-gallery__trigger
+  display: block
+  position: absolute
+  top: 5px
+  right: 5px
+  z-index: 10
+  font-size: 0
+  color: #8c8c8c
+  width: 20px
+  height: 20px
+  margin-right: 15px
+  &:after
+    font-size: 40px
+    line-height: 20px
+    content: "+"
+.slick-prev:before, .slick-next:before
+  color: #ea9393 !important
+.modal
+  display: none
+  position: fixed
+  z-index: 500
+  padding-top: 100px
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.9)
+.modal-content 
+  margin: auto
+  display: block
+  width: 80%
+  max-width: 700px
+.close
+  position: absolute
+  top: 80px
+  right: 35px
+  color: #f1f1f1
+  font-size: 40px
+  font-weight: bold
+  transition: 0.3s
+  &:hover, &:focus
+    color: #bbb
+    text-decoration: none
+    cursor: pointer
+@-webkit-keyframes zoom
+  from
+    -webkit-transform: scale(0)
+  to
+    -webkit-transform: scale(1)
+@keyframes zoom
+  from
+    transform: scale(0)
+  to
+    transform: scale(1)
+.flex-control-nav.flex-control-thumbs
+  position: relative
+  float: left
+  width: 120px
+  overflow: hidden
+  & li img
+    width: 100%
+@media screen and (max-width: 1100px)
+  .flex-control-nav.flex-control-thumbs
+    display: none
+@media screen and (max-width: $mobile)
+  .flex-control-nav.flex-control-thumbs
+    display: none
+  .wrapper
+    .breadcum
+      display: none
+  .woocommerce-product-gallery__trigger
+    display: none
+  .ui-product
+    .ui-product-wrapper
+      display: block
+      .product-images
+        width: 100%
+      .product-infomation
+        text-align: center
+        width: 100%
+        padding-left: 0px
+  .flex-control-nav.flex-control-thumbs
+    display: block

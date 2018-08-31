@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Savoy</title>
+  <link rel="stylesheet" href="/dist/main.css">
+  <!-- <link rel="stylesheet" href="/dist/font-awesome.min.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Start navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="header">
+        <div class="baby-header">
+            <div class="nm-main-menu-wrap col-xs-6">
+                <ul>
+                    <li>
+                      <a href="#">Shop</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item-li"><a href="#">Shop</a></li>
+                        <li class="menu-item-li"><a href="#">Shop - Categories Grid</a></li>
+                        <li class="menu-item-li"><a href="#">Shop – Centered Categories</a></li>
+                        <li class="menu-item-li"><a href="#">Shop – Headers</a></li>
+                        <li class="menu-item-li"><a href="#">Shop – Products Only</a></li>
+                        <li class="menu-item-li"><a href="#">Shop – Pagination</a></li>
+                        <li class="menu-item-li"><a href="#">Shop – Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Pages</a>
+                      <ul class="sub-menu">
+                          <li class="menu-item-li"><a href="#">About</a></li>
+                          <li class="menu-item-li"><a href="#">Blog</a></li>
+                          <li class="menu-item-li"><a href="#">Blog – Classic + Sidebar</a></li>
+                          <li class="menu-item-li"><a href="#">Blog – List</a></li>
+                          <li class="menu-item-li"><a href="#">Blog – Single Post</a></li>
+                          <li class="menu-item-li"><a href="#">Contact</a></li>
+                          <li class="menu-item-li"><a href="#">Contact v2</a></li>
+                          <li class="menu-item-li"><a href="#">FAQ</a></li>
+                          <li class="menu-item-li"><a href="#">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+              </div>
+              <div class="logo">
+                <a href="/"><img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png"></a>
+              </div>
+              <div class="nm-right-menu-wrap col-xs-6">
+                <ul>
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="#">Cart</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                  <div class="logo-mobile">
+                    <img src="http://cdn.savoy.nordicmade.com/wp-content/themes/savoy/assets/img/logo@2x.png">
+                  </div>
+                  <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item"><a href="#home"><span>Cart</span><span class="nm-menu-toggle">(0)</span></a></li>
+                <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle">+</span></a></li>
+                <li class="luxbar-item"><a href="#contact"><span>Pages</span><span class="nm-menu-toggle">+</span></a></li>
+                <li class="luxbar-item"><a href="#about"><span>Element</span><span class="nm-menu-toggle">+</span></a></li>
+                <li class="luxbar-item"><a href="#about"><span>Signin</span><span class="nm-menu-toggle"></span></a></li>
+            </ul>
+        </div>
+    </header>
+    </div>
+  </nav>
+  <!-- End navbar -->
+  <section class="cart-content">
+    <div class="text">
+        <div class="col-xs-12">
+            <div id="post-8" class="post-8 page type-page status-publish hentry">
+                <div class="woocommerce">
+                    <form class="woocommerce-cart-form" action="http://savoy.nordicmade.com/cart/" method="post">
+                        <h3>Shopping Cart</h3>
+                        <table class="shop_table shop_table_responsive woocommerce-cart-form__contents" cellspacing="0">
+                            <tbody>
+                                <tr class="woocommerce-cart-form__cart-item cart_item">
+                                    <td class="product-thumbnail">
+                                        <a href="#">
+                                            <img width="350" height="434" src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-press-coffee-maker-350x434.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">
+                                        </a>
+                                    </td>
+                                    <td class="nm-product-details" data-title="Product">
+                                        <a href="#">Press Coffee Maker</a>                                          
+                                        <div class="nm-product-quantity-pricing">
+                                            <div class="product-quantity" data-title="Quantity">
+                                                <div class="nm-quantity-wrap  qty-show">
+                                                    <label>Quantity</label>
+                                                    <label class="nm-qty-label-abbrev">Qty</label>
+                                                        <div class="quantity">
+                                                            <div class="arrow-left"></div>
+                                                            <input type="number" class="input-text qty text" step="1" min="0" value="1" size="4" pattern="[0-9]*" aria-labelledby="Press Coffee Maker quantity">
+                                                            <div class="arrow-right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="product-subtotal" data-title="Total">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>39.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-remove">
+                                        <a href="#" class="remove" aria-label="Remove this item" data-product_id="247" data-product_sku="73253-32"></a>					
+                                    </td>
+                                </tr>
+                                <tr class="woocommerce-cart-form__cart-item cart_item">
+                                        <td class="product-thumbnail">
+                                            <a href="#">
+                                                <img width="350" height="434" src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-press-coffee-maker-350x434.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="nm-product-details" data-title="Product">
+                                            <a href="#">Press Coffee Maker</a>                                          
+                                            <div class="nm-product-quantity-pricing">
+                                                <div class="product-quantity" data-title="Quantity">
+                                                    <div class="nm-quantity-wrap  qty-show">
+                                                        <label>Quantity</label>
+                                                        <label class="nm-qty-label-abbrev">Qty</label>
+                                                            <div class="quantity">
+                                                                <div class="arrow-left"></div>
+                                                                <input type="number" class="input-text qty text" step="1" min="0" max="" value="1" size="4" pattern="[0-9]*" aria-labelledby="Press Coffee Maker quantity">
+                                                                <div class="arrow-right"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <div class="product-subtotal" data-title="Total">
+                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>39.00</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-remove">
+                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="247" data-product_sku="73253-32"></a>					
+                                        </td>
+                                </tr>
+                                <tr class="woocommerce-cart-form__cart-item cart_item">
+                                        <td class="product-thumbnail">
+                                            <a href="#">
+                                                <img width="350" height="434" src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-press-coffee-maker-350x434.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="nm-product-details" data-title="Product">
+                                            <a href="#">Press Coffee Maker</a>                                          
+                                            <div class="nm-product-quantity-pricing">
+                                                <div class="product-quantity" data-title="Quantity">
+                                                    <div class="nm-quantity-wrap  qty-show">
+                                                        <label>Quantity</label>
+                                                        <label class="nm-qty-label-abbrev">Qty</label>
+                                                            <div class="quantity">
+                                                                <div class="arrow-left"></div>
+                                                                <input type="number" class="input-text qty text" step="1" min="0" max="" value="1" size="4" pattern="[0-9]*" aria-labelledby="Press Coffee Maker quantity">
+                                                                <div class="arrow-right"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <div class="product-subtotal" data-title="Total">
+                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>39.00</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-remove">
+                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="247" data-product_sku="73253-32"></a>					
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="actions">
+                                        <div class="coupon">
+                                            <label for="coupon_code">Coupon:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> <button type="submit" class="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
+                                        </div>
+                                        <button href="#" id="nm-cart-continue-button" class="button border">Continue shopping</button>
+                                        <button type="submit" class="button border" id="submit-update-cart" name="update_cart" value="Update cart" disabled="">Update cart</button>
+                                        <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="d19b3e6fde"><input type="hidden" name="_wp_http_referer" value="/cart/">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="cart-collaterals">
+                        <h2>Cart totals</h2>
+                        <div class="nm-coupon-wrap">
+                            <div class="nm-coupon-inner">
+                                <a href="javascript:void(0);" id="nm-coupon-btn"><div class="arrow-down"></div>Enter coupon</a>
+                                <div class="nm-coupon">
+                                    <input type="text" id="nm-coupon-code" class="input-text" name="nm_coupon_code" value="" placeholder="Coupon code">
+                                    <input type="submit" id="nm-apply-coupon-btn" class="button border" name="nm_apply_coupon" value="Apply coupon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_totals ">
+                            <div class="nm-shipping-calc-wrap">
+                            <form class="woocommerce-shipping-calculator">
+                                <a href="javascript:void(0);" class="shipping-calculator-button"><div class="arrow-down-two"></div>Calculate shipping</a>
+                                <section class="shipping-calculator-form">
+                                    <p class="form-row form-row-wide" id="calc_shipping_country_field">
+                                        <select name="calc_shipping_country" id="calc_shipping_country" class="country_to_state country_select select2-hidden-accessible" rel="calc_shipping_state">
+                                            <option value="">Vietnam</option>
+                                            <option value="AX">Åland Islands</option>
+                                            <option value="AF">Afghanistan</option>
+                                            <option value="AL">Albania</option>
+                                            <option value="DZ">Algeria</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="AD">Andorra</option>
+                                            <option value="AO">Angola</option>
+                                            <option value="AI">Anguilla</option>
+                                            <option value="AQ">Antarctica</option>
+                                            <option value="AG">Antigua and Barbuda</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="AM">Armenia</option>
+                                            <option value="AW">Aruba</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="AT">Austria</option>
+                                            <option value="AZ">Azerbaijan</option>
+                                            <option value="BS">Bahamas</option>
+                                            <option value="BH">Bahrain</option>
+                                            <option value="BD">Bangladesh</option>
+                                            <option value="BB">Barbados</option>
+                                            <option value="BY">Belarus</option>
+                                            <option value="PW">Belau</option>
+                                            <option value="BE">Belgium</option>
+                                            <option value="BZ">Belize</option>
+                                            <option value="BJ">Benin</option>
+                                            <option value="BM">Bermuda</option>
+                                        </select>
+                                        <!-- <span class="select2 select2-container select2-container--default select2-container--below select2-container--open" dir="ltr" style="width: 100%;">
+                                            <span class="selection">
+                                                <span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="true" tabindex="0" aria-labelledby="select2-calc_shipping_country-container" role="combobox" aria-owns="select2-calc_shipping_country-results" aria-activedescendant="select2-calc_shipping_country-result-vnn7-VN">
+                                                    <span class="select2-selection__rendered" id="select2-calc_shipping_country-container" role="textbox" aria-readonly="true" title="Vietnam">Vietnam</span>
+                                                    <span class="select2-selection__arrow" role="presentation">
+                                                        <b role="presentation"></b>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                        </span> -->
+                                    </p>
+                                    <p class="form-row form-row-wide" id="calc_shipping_state_field" style="display: none;">
+                                        <input type="hidden" class="hidden" name="calc_shipping_state" id="calc_shipping_state" value="" placeholder="State / County">
+                                    </p>
+                                    <p class="form-row form-row-wide validate-required" id="calc_shipping_city_field">
+                                        <input type="text" class="input-text" value="" placeholder="Town / City" name="calc_shipping_city" id="calc_shipping_city">
+                                    </p>
+                                    <p class="form-row form-row-wide" id="calc_shipping_postcode_field">
+                                        <input type="text" class="input-text" value="" placeholder="Postcode / ZIP" name="calc_shipping_postcode" id="calc_shipping_postcode">
+                                    </p>
+                                    <p>
+                                        <button type="submit" name="calc_shipping" value="1" class="button border">Update totals</button>
+                                    </p>
+                                    <input type="hidden" id="woocommerce-shipping-calculator-nonce" name="woocommerce-shipping-calculator-nonce" value="d079fea42c">
+                                    <input type="hidden" name="_wp_http_referer" value="/cart/">	
+                                </section>
+                            </form>
+                        </div>
+                        <table cellspacing="0" class="shop_table shop_table_responsive">
+                            <tbody>
+                                <tr class="cart-subtotal">
+                                    <th>Subtotal</th>
+                                    <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>497.00</span></td>
+                                </tr>
+                                <tr class="shipping">
+                                    <td colspan="2" data-title="Shipping">
+                                        <p class="nm-shipping-th-title">Shipping</p>
+                                        <ul id="shipping_method">
+                                            <li>
+                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate1" value="flat_rate:1" class="shipping_method nm-custom-radio">
+                                                <label for="shipping_method_0_flat_rate1" class="nm-custom-radio-label">Standard: <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>10.00</span></label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate2" value="flat_rate:2" class="shipping_method nm-custom-radio" checked="checked">
+                                                <label for="shipping_method_0_flat_rate2" class="nm-custom-radio-label">Express: <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19.00</span></label>					
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="order-total">
+                                    <th>Total</th>
+                                    <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>516.00</span></strong> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="wc-proceed-to-checkout">
+                            <a href="#" class="checkout-button button alt wc-forward">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Start foooter -->
+<footer id="nm-footer" class="nm-footer">
+  <div class="nm-footer-bar">
+    <div class="nm-footer-bar-inner">
+      <div class="nm-row">
+        <div class="nm-footer-bar-left col-md-8 col-xs-12">
+          <ul id="nm-footer-bar-menu" class="menu">
+            <li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386">
+              <a href="http://savoy.nordicmade.com/about/">About Us</a>
+            </li>
+            <li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388">
+              <a href="http://savoy.nordicmade.com/blog/">Blog</a>
+            </li>
+            <li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384">
+              <a href="http://savoy.nordicmade.com/faq/">FAQs</a>
+            </li>
+            <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387">
+              <a href="http://savoy.nordicmade.com/order-tracking/">Order Tracking</a>
+            </li>
+            <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385">
+              <a href="http://savoy.nordicmade.com/contact/">Contact</a>
+            </li>
+            <li class="nm-footer-bar-text menu-item">
+              <div>© By <a href="http://themeforest.net/user/nordicmade/?ref=nordicmade">NordicMade</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nm-footer-bar-right col-md-4">
+          <ul class="nm-footer-bar-social">
+            <li>
+              <a href="http://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://plus.google.com" target="_blank" title="Google+">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script>
+$(document).ready(function(){
+    $('#nm-coupon-btn').click(function(event){
+        $('.nm-coupon').toggleClass("atc");
+    });
+    $('.shipping-calculator-button').click(function(event){
+        $('.shipping-calculator-form').toggleClass("atc");
+    });
+//   $('#nm-coupon-btn').click(function(event){
+//       $('.nm-coupon').css('display') == 'none' 
+//       ? $('.nm-coupon').css("display", "block") 
+//       : $('.nm-coupon').css("display", "none") 
+//   });
+//   $('.shipping-calculator-button').click(function(event){
+//       $('.shipping-calculator-form').css('display') == 'none' 
+//       ? $('.shipping-calculator-form').css("display", "block") 
+//       : $('.shipping-calculator-form').css("display", "none") 
+//   });
+  $('.arrow-left').click(function(){
+        let value = $(this).next().val();
+        if(value == 0){
+            return 1;
+        }
+        value = parseInt(value)-1;
+        $(this).next().val(value);
+  });
+  $('.arrow-right').click(function(){
+        let value = $(this).prev().val();
+        value = parseInt(value)+1;
+        $(this).prev().val(value);
+  });
+});
+</script>
+</html>
